@@ -1,0 +1,22 @@
+Category,Stat ,Sub-categories,Target for 2025,notes
+Objectics and Key Results,Money Moved (monthly + total YTD),,$1.8M,"Our fiscal year runs July 1-June 30, so last fiscal year was July 1, 2023 - June 30 2024"
+,,counterfactual MM,$1.26M,"The payments dataset also has a column 'counterfactuality' which will be between 0-1, to determine how 'counterfactual' the payment is. Which is, how likely it is that this is money that would not have otherwise been donated. Also exclude ""One for the World Discretionary Fund"" and ""One for the World Operating Costs"" from the portfolio column. Calculate the MM by multiplying the counterfactual column by the amount column."
+,Active Annualized Run Rate (monthly),By Channel,$1.2M,"Pledges dataset, converting to USD, active pledges are ones with pledge_status 'Active donor'. The ARR is the total donations per month."
+,Pledge Attrition Rate ,,18%,Pledges dataset: what proportion are being cancelled (pledge_status Payment failure or Churned donor). Calculate attrition rate as you see fit.
+,Total number of active donors,,1200,"Pledges dataset, only include 'one-time' donor  and 'Active donor' under pledge_status, count number of unique donor_ids"
+,Total number of active pledges (paying now),,850,"Pledges dataset, only include 'Active donor' under pledge_status, count number of unique donor_ids"
+,Chapter ARR (current and unstarted),by chapter type,"$670,000","Pledges dataset, by chapter and chapter type, converted to USD"
+Money Moved,Money Moved (monthly + total YTD),,$1.8M,"In the payments dataset, excluding ""One for the World Discretionary Fund ""One for the World Operating Costs"" and ""One for the World Operating Costs"" from the portfolio column"
+,,counterfactual MM,$1.26M,"The payments dataset also has a column 'counterfactuality' which will be between 0-1, to determine how 'counterfactual' the payment is. Which is, how likely it is that this is money that would not have otherwise been donated. Calculate the MM by multiplying the counterfactual column by the amount column."
+,,"By platform (Benevity, Donational, off platform)",-,The payments dataset also has a column 'platform'
+,,"By Source (chapter types,etc)",-,Join payments and pledges on pledge_id 
+,,By month,-,
+,,Reoccuring v. One-Time,-,
+Pledge Performance,ALL pledges (active + future pledges),monthly,1850,"Pledges dataset, 'pledge_status' column Pledged donor and Active donor"
+,Future pledges,monthly,1000,"Pledges dataset, 'pledge_status' column equals 'Pledged donor'"
+,Active Pledges,monthly,850,"Pledges dataset, 'pledge_status' column equals 'Active donor'"
+,ALL ARR,monthly,$1.8M,Future ARR + Active ARR
+,Future ARR,monthly,"$600,000","Pledges dataset, 'pledge_status' equals 'Pledged donor', converted to USD"
+,Active ARR,monthly,$1.2M,"Pledges dataset, 'pledge_status' equals 'Active donor', converted to USD"
+,Monthly Attrition,Monthly,18%,"Pledges dataset, what proportion has the status changed to Payment failure or Churned donor"
+,All of the above broken down by channel/chapter,monthly,TBD,
